@@ -16,5 +16,15 @@ namespace TwoCardDecks
         {
             InitializeComponent();
         }
+
+        private void shuffle1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moveToDeck1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
