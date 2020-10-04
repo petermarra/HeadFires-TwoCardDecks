@@ -31,7 +31,7 @@
             this.reset1 = new System.Windows.Forms.Button();
             this.reset2 = new System.Windows.Forms.Button();
             this.shuffle1 = new System.Windows.Forms.Button();
-            this.shufle2 = new System.Windows.Forms.Button();
+            this.shuffle2 = new System.Windows.Forms.Button();
             this.moveToDeck1 = new System.Windows.Forms.Button();
             this.moveToDeck2 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -58,6 +58,7 @@
             this.reset2.TabIndex = 1;
             this.reset2.Text = "ResetDeck #2";
             this.reset2.UseVisualStyleBackColor = true;
+            this.reset2.Click += new System.EventHandler(this.reset2_Click);
             // 
             // shuffle1
             // 
@@ -69,14 +70,15 @@
             this.shuffle1.UseVisualStyleBackColor = true;
             this.shuffle1.Click += new System.EventHandler(this.shuffle1_Click);
             // 
-            // shufle2
+            // shuffle2
             // 
-            this.shufle2.Location = new System.Drawing.Point(235, 397);
-            this.shufle2.Name = "shufle2";
-            this.shufle2.Size = new System.Drawing.Size(116, 23);
-            this.shufle2.TabIndex = 3;
-            this.shufle2.Text = "ResetDeck #2";
-            this.shufle2.UseVisualStyleBackColor = true;
+            this.shuffle2.Location = new System.Drawing.Point(235, 397);
+            this.shuffle2.Name = "shuffle2";
+            this.shuffle2.Size = new System.Drawing.Size(116, 23);
+            this.shuffle2.TabIndex = 3;
+            this.shuffle2.Text = "Shuffle Deck #2";
+            this.shuffle2.UseVisualStyleBackColor = true;
+            this.shuffle2.Click += new System.EventHandler(this.shuffle2_Click);
             // 
             // moveToDeck1
             // 
@@ -90,12 +92,13 @@
             // 
             // moveToDeck2
             // 
-            this.moveToDeck2.Location = new System.Drawing.Point(167, 200);
+            this.moveToDeck2.Location = new System.Drawing.Point(167, 110);
             this.moveToDeck2.Name = "moveToDeck2";
             this.moveToDeck2.Size = new System.Drawing.Size(44, 23);
             this.moveToDeck2.TabIndex = 5;
             this.moveToDeck2.Text = ">>";
             this.moveToDeck2.UseVisualStyleBackColor = true;
+            this.moveToDeck2.Click += new System.EventHandler(this.moveToDeck2_Click);
             // 
             // listBox1
             // 
@@ -142,7 +145,7 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.moveToDeck2);
             this.Controls.Add(this.moveToDeck1);
-            this.Controls.Add(this.shufle2);
+            this.Controls.Add(this.shuffle2);
             this.Controls.Add(this.shuffle1);
             this.Controls.Add(this.reset2);
             this.Controls.Add(this.reset1);
@@ -160,7 +163,7 @@
         private System.Windows.Forms.Button reset1;
         private System.Windows.Forms.Button reset2;
         private System.Windows.Forms.Button shuffle1;
-        private System.Windows.Forms.Button shufle2;
+        private System.Windows.Forms.Button shuffle2;
         private System.Windows.Forms.Button moveToDeck1;
         private System.Windows.Forms.Button moveToDeck2;
         private System.Windows.Forms.ListBox listBox1;
