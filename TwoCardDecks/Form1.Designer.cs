@@ -34,8 +34,8 @@
             this.shufle2 = new System.Windows.Forms.Button();
             this.moveToDeck1 = new System.Windows.Forms.Button();
             this.moveToDeck2 = new System.Windows.Forms.Button();
-            this.deck1 = new System.Windows.Forms.ListBox();
-            this.deck2 = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             this.reset1.TabIndex = 0;
             this.reset1.Text = "ResetDeck #1";
             this.reset1.UseVisualStyleBackColor = true;
+            this.reset1.Click += new System.EventHandler(this.reset1_Click);
             // 
             // reset2
             // 
@@ -96,21 +97,21 @@
             this.moveToDeck2.Text = ">>";
             this.moveToDeck2.UseVisualStyleBackColor = true;
             // 
-            // deck1
+            // listBox1
             // 
-            this.deck1.FormattingEnabled = true;
-            this.deck1.Location = new System.Drawing.Point(28, 38);
-            this.deck1.Name = "deck1";
-            this.deck1.Size = new System.Drawing.Size(116, 316);
-            this.deck1.TabIndex = 6;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(28, 38);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(116, 316);
+            this.listBox1.TabIndex = 6;
             // 
-            // deck2
+            // listBox2
             // 
-            this.deck2.FormattingEnabled = true;
-            this.deck2.Location = new System.Drawing.Point(235, 38);
-            this.deck2.Name = "deck2";
-            this.deck2.Size = new System.Drawing.Size(116, 316);
-            this.deck2.TabIndex = 7;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(235, 38);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(116, 316);
+            this.listBox2.TabIndex = 7;
             // 
             // label1
             // 
@@ -137,8 +138,8 @@
             this.ClientSize = new System.Drawing.Size(387, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.deck2);
-            this.Controls.Add(this.deck1);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.moveToDeck2);
             this.Controls.Add(this.moveToDeck1);
             this.Controls.Add(this.shufle2);
@@ -162,8 +163,8 @@
         private System.Windows.Forms.Button shufle2;
         private System.Windows.Forms.Button moveToDeck1;
         private System.Windows.Forms.Button moveToDeck2;
-        private System.Windows.Forms.ListBox deck1;
-        private System.Windows.Forms.ListBox deck2;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }
